@@ -6,10 +6,10 @@ import payment.PayPalPaymentStrategy;
 
 import delivery.PostDeliveryStrategy;
 
-public class FastOrderConstructor {
+public  class FastOrderConstructor {
 
 
-    public Order createOrder() {
+    public static Order createOrder() {
         Order quickOrder = new Order();
         quickOrder.setPaymentStrategy(new PayPalPaymentStrategy());
         quickOrder.setDeliveryStrategy(new PostDeliveryStrategy());
