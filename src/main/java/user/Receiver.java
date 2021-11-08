@@ -10,7 +10,7 @@ public class Receiver extends User{
     }
     @Override
     public void update(boolean status) {
-        if (status) System.out.println("Updated");
+        if (status) System.out.printf("Updated receiver %s", getId());
     }
 
 }
